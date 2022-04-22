@@ -1,5 +1,4 @@
 import React from "react";
-import check from "../..//..//img//checkmark-square-outline.svg";
 
 const ListItem = (props) => {
   const deleteButton = () => {
@@ -18,15 +17,16 @@ const ListItem = (props) => {
     }))
   }
   return (
-    <div className='d-flex flex-row justify-content-center align-items-baseline'>
+    <div className='d-flex flex-row justify-content-between align-items-baseline p-1'>
       <div className='pt-4'>
-        <li style={{maxWidth:'500px',minWidth:'500px'}}>
+        <li>
           <p style={{overflowWrap:"break-word"}}>
           {props.todo.text}
           </p>
         </li>
       </div>
-      <div className="p-2">
+      <div className="d-flex flex-row">
+      <div className="px-1">
         <button onClick={completeButton}
         className={`${props.todo.completed ? "btn btn-success btn-sm" : "btn btn-outline-success btn-sm"}`}>{`${props.todo.completed ? "completed" : "complete"}` }</button>
       </div>
@@ -34,6 +34,8 @@ const ListItem = (props) => {
         <button onClick={deleteButton}
         className='btn btn-outline-danger btn-sm'>delete</button>
       </div>
+      </div>
+    
     </div>
   )
 };

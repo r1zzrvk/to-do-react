@@ -26,15 +26,15 @@ const Input = (props) => {
             placeholder="Type something..."
             onChange={handleChange}
             value={props.inputText} 
-            className="col-auto"/>
-          <div className="col-auto">
+            className="col-auto py-1"/>
+          <div className="col-auto py-1">
             <button
               type='submit'
               className="btn btn-outline-dark btn-lg"
             >submit
             </button>
           </div>
-        <div className="col-auto">
+        <div className="col-auto py-1">
           <select onChange={filterHandler}
           className="form-select form-select-lg ">
             <option value='all'>All</option>
