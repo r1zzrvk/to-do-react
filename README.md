@@ -19,4 +19,4 @@ Deploy on `gh-pages`
 
 ### `ToDo`
 
-![todo](public%5Ctodo.gif)
+![todo(1)](https://user-images.githubusercontent.com/82266287/167105422-9299e7c2-05cd-4edc-b604-fea6cc3c69b2.gif)
