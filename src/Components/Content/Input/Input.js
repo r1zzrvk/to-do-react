@@ -31,7 +31,7 @@ const Input = (props) => {
             <button
               type='submit'
               className="btn btn-outline-dark btn-lg"
-            >submit
+            >Submit
             </button>
           </div>
         <div className="col-auto py-1">
